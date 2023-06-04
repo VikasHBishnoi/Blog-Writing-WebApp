@@ -3,7 +3,11 @@
     <p><%=startingContent%></p>
     <% for (let i=0;i<post.length;i++) {%>
         <h1><%=post[i].title%> </h1>
-        <p><%=post[i].content%></p>
+        <p><%=post[i].content%> .. <a href="post/<%=post[i]._id%>">Read More</a></p>
+        
+        <!-- <form action="post/<%=post[i].title%>" method="get"> -->
+            <!-- <button type="submit" value="Z">readmore</button> -->
+        <!-- </form> -->
     <%}%>
     
 <%- include('partials/footer') -%>
